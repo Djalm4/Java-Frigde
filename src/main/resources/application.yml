@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: djalma
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    datebase-platform: org.hibernate.dialect.H2Dialect
+    hipernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
